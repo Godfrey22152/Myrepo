@@ -5,4 +5,4 @@ git remote add origin master git@github.com:Godfrey22152/Myrepo.git
 git pull origin main
 
 3. push locall repo to remote:
-git push origin master 
+git push origin main 
