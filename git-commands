@@ -1,0 +1,8 @@
+1. connect local and remote repo:
+git remote add origin master git@github.com:Godfrey22152/Myrepo.git
+
+2. pull remote repo: 
+git pull origin main
+
+3. push locall repo to remote:
+git push origin master 
