@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             when {
                 expression {
-                    BRANCH_NAME == 'main' && changesetExists()
+                    BRANCH_NAME == 'default' && changesetExists()
                 }
             }
             steps {
