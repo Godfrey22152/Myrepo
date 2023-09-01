@@ -1,14 +1,15 @@
-CODE_CHANGES = getGitChanges()
+def CODE_CHANGES = getGitChanges()
+
 pipeline {
     agent any
 
     stages {
         stage('Build') {
-          when {
-            expression {
-              BRANCH_NAME == 'main' && CODE_CHANGES == true
+            when {
+                expression {
+                    BRANCH_NAME == 'main' && CODE_CHANGES == true
+                }
             }
-          }
             steps {
                 echo 'Building the Application'
             }
@@ -20,7 +21,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deployimg the Application'
+                echo 'Deploying the Application'
             }
         }
     }
